@@ -6,7 +6,7 @@ class Fortune < Formula
   license "BSD-4-Clause"
 
   def install
-    system "make", "OFFENSIVE=1"
+    system "make OFFENSIVE=1"
     bin.install "fortune"
     share.install "datfiles"
   end
